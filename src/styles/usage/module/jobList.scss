@@ -1,0 +1,443 @@
+/* pages/index/index.wxss */
+.homeback{
+  background: url("/images/icons/home.png") no-repeat center;
+  background-size: 25px;
+  border-radius: 50%;
+  background-color: #6e3fff;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  right: 10px;
+  z-index: 100;
+  color: #fff;
+}
+.homebackTop{
+  top: 23px;
+}
+.search{
+  @include flexbox();
+  position: fixed;
+  top: 25px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 0 10px;
+  .select_box {
+    position: relative;
+    width: 75px;
+    height: 28px;
+    span {
+      display: block;
+      height: 28px;
+      font-size: 14px;
+      color: #fff;
+      text-indent: 9px;
+      border-radius: 28px;
+      line-height: 28px;
+      background: #6E3FFF url('/images/icons/sanjiao_bottom.png') no-repeat 54px center;
+      background-size: 12px 7px;
+    }
+    ul{
+      position: absolute;
+      top: 0;
+      border-radius: 14px;
+      overflow: hidden;
+      li {
+        width: 75px;
+        height: 28px;
+        font-size: 14px;
+        line-height: 28px;
+        text-align: center;
+        color: #fff;
+        background: #6E3FFF;
+        border-bottom: 1px solid #ccc;
+      }
+    }
+  }
+  .serch_span{
+    @include flex(1);
+    display: block;
+    margin-left: 10px;
+    border-radius: 28px;
+    text-indent: 18%;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    background: #fff url('/images/icons/fangdajing.png') no-repeat 29px center;
+    background-size: 20px 20px;
+  }
+  ._zhan{
+    width: 35px;
+  }
+}
+
+#jobListSwiper {
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.listTop{
+  @include flexbox();
+  @include flex-direction(row);
+  width: 100%;
+  height: 50px;
+  background: #6e3fff;
+  position: absolute;
+  z-index: 1000;
+
+  .parentLi{
+    @include flex(1);
+    position: relative;
+    line-height: 30px;
+    color: #fff;
+    border-left: 1px solid #fff;
+    height: 30px;
+    text-align: center;
+    padding-right: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    background: url('/images/icons/top.png') no-repeat 90% center;
+    background-size: 16px 16px;
+
+    .goDown{
+      width: 100%;
+      position: absolute;
+      bottom: -50vh;
+      div{
+        width: 100%;
+        height: 30px;
+        background: #6e3fff url('/images/icons/top.png') no-repeat center center;
+        background-size: 16px 16px;
+        position: absolute;
+        bottom: -40px;
+      }
+    }
+    .childUl {
+      width: 100%;
+      background: #6e3fff;
+      position: absolute;
+      overflow-y: scroll;
+      max-height: 50vh;
+      top: 40px;
+      .childLi {
+        width: 100%;
+        height: 50px;
+        font-size: 14px;
+        color: #fff;
+        line-height: 50px;
+        text-align: center;
+        background: #6e3fff;
+        border-top: 1px solid #fff;
+      }
+    }
+
+    .cityIscroll{
+      .childLi{
+        font-size: 12px;
+      }
+    }
+  }
+
+  #newReruit{
+    padding-right: 20px;
+    border:0;
+  }
+
+  #city{
+    font-size: 12px;
+  }
+}
+
+#index-scroll {
+  @include flex(1);
+  width: 100%;
+  overflow: hidden;
+  background: #f6f7f9;
+
+  .jumpBox {
+    @include flexbox();
+    @include flex-direction(row);
+    height: 178px;
+    .leftBox {
+      @include flexbox();
+      @include flex-direction(column);
+      @include flex(1);
+      // width: 50%;
+      height: 178px;
+      background: green;
+      span {
+        display: block;
+        height: 89px;
+        padding: 32px 0 0 22px;
+        font-size: 17px;
+        color: #000;
+      }
+      .leftBox_top {
+        background:#fbfcfc url('/images/tabs/clock.png') no-repeat 96% center;
+        background-size: 63px 63px;
+      }
+      .leftBox_bottom {
+        background: #f7f7f8 url('/images/tabs/money.png') no-repeat right center;
+        background-size: 74px 89px;
+      }
+    }
+    .rightBox {
+      @include flex(1);
+      // width: 50%;
+      height: 178px;
+      background: url('/images/tabs/pic.png') no-repeat center;
+      background-size: cover;
+    }
+  }
+  .downPull {
+    display: block;
+    height: 26px;
+    background: #f6f7f8 url('/images/icons/sanjiao_blue.png') no-repeat center;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.searchCountry {
+  background: #fff;
+  @include flexbox();
+  @include justify-content(space-around);
+  font-size: 12px;
+  height: 90px;
+
+  div {
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.content {
+  width: 100%;
+  background: #fff;
+  margin-bottom: 8px;
+  position: relative;
+  overflow: hidden;
+
+  .sussecc{
+    position: absolute;
+    background: url('/images/icons/success.png');
+    width: 145px;
+    height: 79px;
+    bottom: 40px;
+    right: 50px;
+  }
+}
+
+.zp-box {
+  padding: 2vw 6vw;
+  background: #fff;
+  margin-bottom: 2vw;
+}
+
+.zp-box div {
+  margin: 2vw 0;
+}
+
+.zp-address {
+  color: #848484;
+  font-size: 12px;
+}
+
+.zp-address img {
+  width: 6vw;
+  height: 6vw;
+}
+
+.zp-link {
+  border-bottom: 1px solid #ccc;
+}
+
+.zp-name {
+  color: #848484;
+}
+
+.zp-t-1 {
+  @include flex(1);
+  font-weight: bold;
+}
+
+.xinzi {
+  color: #fd877d;
+  font-weight: bold;
+}
+
+.zp-title {
+  @include flexbox();
+  @include justify-content(space-between);
+  font-size: 16px;
+}
+
+.zp-info {
+  @include flexbox();
+  @include align-items(center);
+
+  .time {
+    padding-right: 10vw;
+    @include flexbox();
+    @include align-items(center);
+  }
+}
+
+.name {
+  padding-left: 10px;
+  @include flexbox();
+  @include justify-content(center);
+  @include align-items(center);
+  color: #53cac3;
+}
+
+.zp-info img {
+  width: 8vw;
+}
+
+.contentBox1 {
+  padding: 16px 20px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  .details{
+    margin-top: 17px;
+    color: #797979;
+    font-size: 16px;
+  }
+  .titleBox {
+    padding: 0 0 0 0;
+    .companyName {
+      font-size: 20px;
+      color: #000;
+    }
+    .money {
+      text-align: right;
+      flex-shrink: 0;
+      width: 90px;
+      font-size: 15px;
+      color: red;
+      line-height: 30px;
+    }
+  }
+  .requireBox {
+    overflow: hidden;
+    .spanArr {
+      width: 65%;
+      float: left;
+      overflow: hidden;
+      span {
+        display: block;
+        float: left;
+        height: 24px;
+        padding: 0 10px;
+        margin-right: 5px;
+        font-size: 15px;
+        color: #808080;
+        line-height: 24px;
+        background: #e6e6e6;
+        margin-top: 8px;
+        border-radius: 3px;
+      }
+    }
+    .timeBox {
+      float: right;
+      margin-top: 5px;
+    }
+  }
+  .suoxie {
+    @include flexbox();
+    @include flex-direction(row);
+    @include justify-content(between-around);
+    margin-top: 20px;
+    img {
+      width: 40px;
+      height: 40px;
+
+    }
+    .suoxie_text {
+      @include flex(1);
+      @include flexbox();
+      @include flex-direction(column);
+      margin-left: 10px;
+      .suoxieName {
+        font-size: 15px;
+        color:#000;
+        font-weight: 700;
+      }
+      .suo_Info {
+        font-size: 12px;
+        color: #808080;
+        overflow: hidden;
+      }
+    }
+  }
+  .hideBox {
+    .picBox {
+      display: block;
+      width: 100%;
+
+    }
+    .callPhone {
+      display: block;
+      position: relative;
+      width: 72%;
+      height: 60px;
+      margin: 0 auto;
+      margin-top: 23px;
+      margin-bottom: 52px;
+      font-size: 30px;
+      color: #fff;
+      line-height: 60px;
+      text-indent: 23%;
+      border-radius: 60px;
+      background:#6e3fff url('/images/icons/phoneBg.png') no-repeat  10% center;
+      background-size: 35px;
+    }
+      .shareBox {
+        @include flexbox();
+        @include flex-direction(row);
+        @include justify-content(space-between);
+        height: 30px;
+      .like {
+        width: 86px;
+        height: 30px;
+        background: url('/images/icons/likeRed.png') no-repeat center;
+        background-size: 86px 30px;
+      }
+      .unlike {
+        width: 86px;
+        height: 30px;
+        background: url('/images/icons/likeWhite.png') no-repeat center;
+        background-size: 86px 30px;
+      }
+      .ding {
+        width: 70px;
+        height: 30px;
+        background: #e6e6e6;
+        font-size: 18px;
+        color: #878787;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 30px;
+      }
+      .shareWx {
+        font-size: 18px;
+        padding-left: 60px;
+        line-height: 30px;
+        color: #808080;
+        width: 176px;
+        height: 30px;
+        background: url('/images/icons/sharePic.png') no-repeat center;
+        background-size: 176px 30px;
+      }
+    }
+  }
+}

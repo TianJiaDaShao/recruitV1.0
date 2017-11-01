@@ -1,0 +1,175 @@
+.sussecc{
+	position: absolute;
+	background: url('/images/icons/success.png');
+	width: 145px;
+	height: 79px;
+	top: 50px;
+	right: 50px;
+}
+
+.detailsBox {
+	overflow: auto;
+}
+.share {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .3);
+	.shareBg {
+		height: 192px;
+		background: url('/images/tabs/weixinBg.png') no-repeat center;
+		background-size: cover;
+	}
+}
+.companyBox {
+	padding: 26px 21px 0 21px;
+	.companyName {
+		@include flexbox();
+		@include flex-direction(row);
+		#companyIcon {
+			width: 73px;
+			height: 70px;
+		}
+		.companyNameText {
+			@include flex(1);
+			margin-left: 18px;
+			font-size: 26px;
+			color: #000;
+			line-height: 40px;
+			text-align: left;
+		}
+	}
+	.companyContent {
+		margin-top: 17px;
+		font-size: 12px;
+		color: #808080;
+		line-height: 24px;
+		text-align: left;
+	}
+	.companyPic	{
+		width: 100%;
+		margin-top: 13px;
+		margin-bottom: 9px;
+		background-size: cover;
+	}
+}
+.line {
+	display: block;
+	height: 2px;
+	background: #ccc;
+}
+.jobBox {
+	padding: 11px 21px 0 21px;
+	.jobName {
+		font-size: 25px;
+		color: #000;
+		texrt-align: left;
+		font-weight: 600;
+	}
+	.salary {
+		margin-top: 15px;
+		font-size: 25px;
+		color: #000;
+		text-align: right;
+		font-weight: 600;
+		span {
+			font-size: 20px;
+			color: red;
+		}
+	}
+	.requireBox {
+		margin-top: 15px;
+		overflow: hidden;
+		span {
+			display: block;
+			float: left;
+			height: 24px;
+			padding: 0 10px;
+			margin-right: 5px;
+			font-size: 15px;
+			color: #808080;
+			line-height: 24px;
+			background: #e6e6e6;
+			margin-top: 8px;
+			border-radius: 3px;
+		}
+	}
+	.beizhu {
+		margin-top: 18px;
+		font-size: 15px;
+		color: #808080;
+	}
+	.erWeiMa {
+		margin-top: 30px;
+		.erWeiPic {
+			display: block;
+			width: 140px;
+			height: 140px;
+			margin: 0 auto;
+		}
+		.erWeiText {
+			font-size: 15px;
+			color: #808080;
+			text-align: center;
+		}
+	}
+	.callPhone {
+		display: block;
+		width: 94%;
+		height: 60px;
+		margin: 0 auto;
+		margin-top: 23px;
+		margin-bottom: 52px;
+		font-size: 30px;
+		color: #fff;
+		line-height: 60px;
+		text-indent: 34%;
+		border-radius: 60px;
+		background:#6e3fff url('/images/icons/phoneBg.png') no-repeat  10% center;
+		background-size: 35px;
+	}
+	.backBox {
+		@include flexbox();
+		@include flex-direction(row);
+		@include justify-content(space-around);
+		height: 55px;
+		margin-bottom: 13px;
+		.back {
+			width: 148px;
+			height: 55px;
+			font-size: 12px;
+			color: #fff;
+			line-height: 55px;
+			text-indent: 64px;
+			background: url('/images/icons/backToHome.png') no-repeat center;
+			background-size: 148px 55px;
+		}
+		.dateBox {
+			position: relative;
+			height: 55px;
+			padding-top: 30px;
+			font-size: 12px;
+			color: #808080;
+			.like {
+				position: absolute;
+				right: 0;
+				top: -12px;
+				width: 86px;
+				height: 30px;
+				background: url('/images/icons/likeWhite.png') no-repeat center;
+				background-size: 86px 30px;
+			}
+			.unlike{
+				position: absolute;
+				right: 0;
+				top: -12px;
+				width: 86px;
+				height: 30px;
+				background: url('/images/icons/likeRed.png') no-repeat center;
+				background-size: 86px 30px;
+			}
+		}
+	}
+}

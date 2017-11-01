@@ -1,0 +1,145 @@
+.searchBgBox{
+	@include flexbox();
+	@include flex-direction(column);
+	@include flex(1);
+	width: 100%;
+	// position: fixed;
+	// top: 0;
+	// left: 0;
+	// bottom: 0;
+	// right: 0;
+	padding: 8px 11px 0 11px;
+	background: #f6f6f7;
+
+	.searchBox {
+		@include flexbox();
+		@include flex-direction(row);
+		@include justify-content(space-between);
+		height: 28px;
+		.select_box {
+		    width: 75px;
+		    height: 28px;
+		    margin-right: 4px;
+	        position: relative;
+		    span {
+		      display: block;
+		      height: 28px;
+		      font-size: 14px;
+		      color: #fff;
+		      border-radius: 28px;
+		      line-height: 28px;
+		      text-indent: 9px;
+		      background: #6E3FFF url('/images/icons/sanjiao_bottom.png') no-repeat 54px center;
+		      background-size: 12px 7px;
+		    }
+		    ul{
+		    	position: absolute;
+					top: 0;
+					border-radius: 14px;
+					overflow: hidden;
+		    	width: 75px;
+		    	z-index: 1;
+		     	li {
+			        width: 75px;
+			        height: 28px;
+			        font-size: 14px;
+			        line-height: 28px;
+			        text-align: center;
+							color: #fff;
+							background: #6E3FFF;
+			        border-bottom: 1px solid #ccc;
+			    }
+		    }
+	    }
+	    .searchVue_input {
+	    	@include flex(1);
+	    	height: 28px;
+	    	padding-left: 12%;
+	    	font-size: 14px;
+	    	color: #999;
+	    	text-align: left;
+	    	line-height: 28px;
+	    	background:#e6e9e9 url('/images/icons/fangdajing.png') no-repeat 9% center;
+	    	background-size: 20px 20px;
+	    	border: 1px solid #ccc;
+	    	border-radius: 28px;
+	    }
+	    .backBtn {
+	    	display: block;
+	    	width: 34px;
+	    	height: 28px;
+	    	margin-left: 11px;
+	    	font-size: 16px;
+	    	color: #999;
+	    	line-height: 28px;
+	    	text-align: center;
+	    }
+	}
+	.contentBox {
+		padding: 0 4px;
+		width: 100%;
+		overflow: auto;
+		.submitBox {
+			height: 48px;
+			margin: 50px 0 34px 0;
+			span {
+				display: block;
+				width: 183px;
+				height: 48px;
+				margin: 0 auto;
+				font-size: 21px;
+				color: #fff;
+				line-height: 48px;
+				text-align: left;
+				text-indent: 21px;
+				border-radius: 48px;
+				background:#6e40fe url('/images/icons/querenBtn.png') no-repeat 141px center;
+				background-size: 32px 32px;
+			}
+		}
+	}
+	.cityBox {
+		margin-top: 37px;
+		.cityTitle {
+			display: block;
+			font-size: 15px;
+			color: #0b0b0c;
+			font-weight: 600;
+			text-indent: 4px;
+		}
+		.cityList {
+			margin-top: 12px;
+			overflow: hidden;
+			span {
+				display: block;
+				float: left;
+				height: 27px;
+				padding: 0 14px;
+				margin: 0 0 7px 7px;
+				font-size: 13px;
+				color: #808080;
+				line-height: 27px;
+				border: 1px solid #ccc;
+				border-radius: 27px;
+			}
+			.spanSelected {
+				background: red;
+				color: #fff;
+			}
+		}
+		.freeBox {
+			display: block;
+			height: 145px;
+			overflow: hidden;
+			div {
+				width: 232px;
+				height: 111px;
+				margin: 0 auto;
+				margin-top: 15px;
+				background: url('/images/icons/search.png') no-repeat center;
+				background-size: 232px 111px;
+
+			}
+		}
+	}
+}

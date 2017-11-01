@@ -1,0 +1,22 @@
+#company{
+  @include flex(1);
+  width: 100%;
+
+  .whyBox{
+    height: 100%;
+
+    .submitBtn{
+      height: 48px;
+      width: 66%;
+      margin: 0 auto;
+      margin-top: 21px;
+      margin-bottom: 15px;
+      font-size: 23px;
+      color: #fff;
+      line-height: 48px;
+      text-align: center;
+      border-radius: 48px;
+      background: #6e3fff;
+    }
+  }
+}

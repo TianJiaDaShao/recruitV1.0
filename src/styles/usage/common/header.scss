@@ -1,0 +1,22 @@
+$headerBg: #53cac3;
+$headerColor: #fff;
+
+header {
+  height: 40px;
+  @include flexbox();
+  @include justify-content(space-between);
+  background: $headerBg;
+  color: $headerColor;
+  line-height: 40px;
+
+  img {
+    width: 20px;
+    margin: 0 6px;
+  }
+}
+
+#backHead {
+  text {
+    padding-right: 60px;
+  }
+}

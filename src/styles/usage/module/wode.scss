@@ -1,0 +1,98 @@
+#wode {
+	@include flexbox();
+	@include flex(1);
+	@include flex-direction(column);
+	width: 100%;
+	background: #fff;
+	.homeback{
+		bottom: 50px;
+	}
+	.my_top {
+		@include flexbox();
+		@include flex-direction(row);
+		@include justify-content(center);
+		@include align-items(center);
+		height: 160px;
+		background: url('/images/icons/my_bg.png') no-repeat center;
+		background-size: cover;
+		margin-bottom: 42px;
+		img {
+			display: block;
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+		}
+	}
+	.user_ul {
+		padding: 0 25px;
+		li {
+			width: 100%;
+			height: 23px;
+			padding-left: 36px;
+			margin-bottom: 28px;
+			font-size: 15px;
+			color: #000;
+			line-height: 23px;
+			&:nth-child(1) {
+				position: relative;
+				background: url('/images/icons/user_pic.png') no-repeat left center;
+				background-size: 20px 20px;
+				text {
+					display: block;
+					float: left;
+					height: 23px;
+					line-height: 23px;
+				}
+			}
+			&:nth-child(2) {
+				background: url('/images/icons/laba.png') no-repeat left center;
+				background-size: 20px 20px;
+			}
+			&:nth-child(3) {
+				background: url('/images/icons/hongxin.png') no-repeat left center;
+				background-size: 20px 20px;
+			}
+			&:nth-child(4) {
+				background: url('/images/icons/duihao.png') no-repeat left center;
+				background-size: 20px 20px;
+			}
+			span {
+				display: block;
+				float: right;
+				width: 60px;
+				height: 23px;
+				font-size: 11px;
+				color: #fff;
+				line-height: 23px;
+				text-align: center;
+				border-radius: 23px;
+				background: #6e3fff;
+			}
+		}
+		.textAreaBox {
+			width: 100%;
+			textarea {
+				display: block;
+				width: 100%;
+				min-height: 130px;
+				padding: 5px 10px;
+				border: 1px solid #808080;
+				resize: none;
+
+			}
+			.submitBtn_wode {
+				display: block;
+				width: 66%;
+				height: 40px;
+				margin: 0 auto;
+				margin-top: 20px;
+				font-size: 23px;
+				color: #fff;
+				line-height: 40px;
+				text-align:center;
+				border-radius: 40px;
+				background: #6e3fff;
+			}
+		}
+	}
+}
